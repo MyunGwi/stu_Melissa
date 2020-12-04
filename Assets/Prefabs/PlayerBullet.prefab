@@ -75,8 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8348016747007819476, guid: a42ce43c6bd8241ecb4c1157f2a64149,
-    type: 3}
+  m_Sprite: {fileID: -8348016747007819476, guid: a42ce43c6bd8241ecb4c1157f2a64149, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,13 +108,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482784819399484650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7cde711871db4c938baf9e4b498de05, type: 3}
+  m_Script: {fileID: 11500000, guid: bebef77710ec30a44abaf50fa0be9039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeMax: Infinity
   time: 0
-  hp: 10
-  hpMax: 10
+  hpMax: 100
+  hp: 100
+  invincible: 0
   velocity: {x: 0, y: 0, z: 0}
   angularVelocity: {x: 0, y: 0, z: 0}
   drag: 0
@@ -128,10 +128,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482784819399484650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ff662bc45be45468962fad9e367327, type: 3}
+  m_Script: {fileID: 11500000, guid: 77da9fb33068ec74383923c8e0647c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
 --- !u!114 &962081822013482418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7482784819399484650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f203d90062344ea2a7f103b6653899f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e2bb81b42685cb499c7eb607be355e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sources:
@@ -151,9 +151,11 @@ MonoBehaviour:
   - {fileID: 3709018726174945023, guid: 5e96fa5bc088b45d58bdba2a540fd6e8, type: 3}
   - {fileID: 177411903655817570, guid: 647ed86780cfd4ee4b7a450aa1303a05, type: 3}
   count: 8
+  mode: 0
   velocity: 4
   velocityVariation: 0.5
-  timeMax: 0.1
+  timeMax: 0.2
   timeMaxVariation: 0.5
   explodeOnDestroy: 0
+  explodeDelay: 0
   hideClonesInHierarchy: 1

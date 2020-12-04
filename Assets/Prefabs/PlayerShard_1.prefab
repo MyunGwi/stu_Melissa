@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7926342059068600422}
   - component: {fileID: 894786653403808958}
   - component: {fileID: 2286672230983131478}
+  - component: {fileID: 7880345560548549458}
   m_Layer: 0
   m_Name: PlayerShard_1
   m_TagString: Untagged
@@ -72,8 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3871034404151536601, guid: a42ce43c6bd8241ecb4c1157f2a64149,
-    type: 3}
+  m_Sprite: {fileID: 3871034404151536601, guid: a42ce43c6bd8241ecb4c1157f2a64149, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,13 +93,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 4349345724074472455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7cde711871db4c938baf9e4b498de05, type: 3}
+  m_Script: {fileID: 11500000, guid: bebef77710ec30a44abaf50fa0be9039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMax: 1
+  timeMax: Infinity
   time: 0
-  hp: 100
   hpMax: 100
+  hp: 100
+  invincible: 0
   velocity: {x: 0, y: 0, z: 0}
   angularVelocity: {x: 0, y: 0, z: 0}
   drag: 0
+--- !u!114 &7880345560548549458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349345724074472455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f056b7fcc6e1ac4f8dfbf243586c346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 10

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3832767793883095729}
   - component: {fileID: 2780625653375154537}
   - component: {fileID: 1338685694183358274}
+  - component: {fileID: 4064533859535214613}
   m_Layer: 0
   m_Name: PlayShard_5
   m_TagString: Untagged
@@ -92,13 +93,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 3241688627831849167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67cd7510f85e9cc4b8d5f5f8c419ceb6, type: 3}
+  m_Script: {fileID: 11500000, guid: bebef77710ec30a44abaf50fa0be9039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeMax: Infinity
   time: 0
-  hp: 100
   hpMax: 100
+  hp: 100
+  invincible: 0
   velocity: {x: 0, y: 0, z: 0}
   angularVelocity: {x: 0, y: 0, z: 0}
   drag: 0
+--- !u!114 &4064533859535214613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241688627831849167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f056b7fcc6e1ac4f8dfbf243586c346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 10
