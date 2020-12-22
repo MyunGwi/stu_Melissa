@@ -1,2 +1,2 @@
 ﻿# stu_Melissa
-je comprend pas
+je ne me rappelle plus exactement comment marche Git
